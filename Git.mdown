@@ -1,0 +1,66 @@
+GITHUB DESDE LA TERMINAL
+
+Lo primero que debemos hacer es "vincular" nuestro github online con git, desde nuestro ordenador. Para ello:
+
+git config --global user.email "tavoibrahim@gmail.com"
+
+git config user.name "TavoIbrahim"
+
+Clonar un repositorio
+
+En este caso, yo voy a crear un clon del repositorio BioinfinvRepro que vive en mi cuenta Github (Es un fork, el original vive en la cuenta de AliciaMsst). Para ello, escribiré:
+
+git clone https://github.com/TavoIbrahim/BioinfinvRepro.git
+
+Es necesario movernos al repo clonado que instalamos en el ordenador, así que:
+
+cd BioinfinvRepro
+
+A partir de este momento, 
+
+git status
+
+Nos permitirá comprobar nuestro status (si hay archivos o cambios que han quedado pendientes subir/commit)
+
+git add
+
+Nos permitirá agregar los cambios (archivos, directorios, etc.) a nuestro git
+
+git commit -m
+
+Nos permitirá agregar un comentario a los cambios que estamos realizando (e.g., Add for loop)
+
+y finalmente, git push
+
+que "empuja" nuestros cambios a nuestra cuenta de github (git en internet)
+
+El gitpush sólo se puede realizar cuando empujamos cambios a NUESTRA CUENTA. Para "empujar cambios" a otras cuentas, se requerirá realizar un pull request.
+
+##########################
+
+HACER FORK
+
+Hacer un fork implica copiar un repositorio. La idea en este caso es proponer cambios o utilizar un punto de partida para desarrollar una idea propia, SIN realizar cambios al repo original.
+
+Es muy útil para tratar bugs, de tal suerte que:
+
+1) Haces el fork del repo
+2) Realizas los cambios necesarios
+3) Realizas un Pull request
+
+PASOS PARA HACER UN FORK Y PULL request
+
+1)Desde el navegador, realizar el fork del repositorio que nos interesa modificar.
+2) Desde la terminal, bajamos los directorios y archivos de repositorio a nuestro ordenador con:
+
+git clone [URL AL FORK en nuestra cuenta]
+
+3) Configurar GIT para sincronizar tu fork (EL CLON QUE VIVE EN NUESTRO ORDENADOR) con el repositorio original (EL QUE VIVE EN INTERNET), hay que escribir:
+
+git remote -v 
+
+para verificar la configuración remota de nuestro fork. Y:
+
+git remote add upstream [URL al repositorio con el que queremos actualizar]
+
+Esta última línea sólo nos va a servir para actualizar repos (o FORKS) que vivan en nuestra cuenta de github (osea que no podremos actualizar el repo de Alicia :( )
