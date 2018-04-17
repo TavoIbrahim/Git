@@ -23,6 +23,7 @@ Aparecerá algo así:
 ![alt text](https://github.com/TavoIbrahim/Git/blob/master/Captura%20de%20pantalla%20de%202018-04-17%2009-01-31.png)
 
 **2)** Realizas los cambios necesarios
+
 **3)** Pull request, es decir, propones tus cambios
 
 ## Hacer cambios Ordenador --> Nuestro GitHub
