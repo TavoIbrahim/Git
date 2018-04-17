@@ -44,7 +44,7 @@ que nos permitirá comprobar nuestra situación (si hay archivos o cambios que h
 
 `git add`
 
-que agregará los cambios (archivos, directorios, etc.) a git (e.g., `Physalia_physalis.txt`); y  
+que agregará los cambios (archivos, directorios, etc.) a git (i.e., Physalia_physalis.txt); y  
 
 `git commit -m`
 
