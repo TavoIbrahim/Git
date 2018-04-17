@@ -38,7 +38,7 @@ que "empuja" los cambios a nuestro GitHub.
 
 `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un `pull request`.
 
-## Hacer cambios GitHub ---> Ordenador (Sincronizar)
+## Hacer cambios Nuestro GitHub ---> Ordenador (Sincronizar)
 
 Para actualizar (sincronizar) la copia del repositorio que vive en nuestro ordenador con el repositorio en nuestro GitHub, hay que escribir:
 
