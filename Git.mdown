@@ -38,15 +38,19 @@ que "empuja" los cambios a nuestro GitHub.
 
 `git push origin master` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un **pull request**.
 
-## Sincronizar un repositorio con nuestra cuenta GitHub (o crear un remote)
+## Sincronizar un repositorio con una cuenta GitHub (o crear un remote)
 
-Para sincronizar la copia del repositorio que vive en nuestro ordenador con el repositorio en GitHub, hay que crear un escribir:
+Para sincronizar la copia del repositorio que ya descargamos y que vive en nuestro ordenador, con el código guardado en GitHub (ya sea un *fork* o el original), hay que crear un *remote* o un vínculo. 
+
+Vamos a descargar el repositorio Ozono, que vive en la cuenta de [Vero](https://github.com/VeroIarrachtai) y, estando dentro del directorio, escribimos
 
 `git remote -v` 
 
-para verificar la configuración remota de nuestra copia. Y:
+Esta línea nos sirve para verificar el *origin* del repositorio que descargamos. En este caso el origin debe ser la URL al código de Vero. 
 
-`git remote add upstream https://github.com/TavoIbrahim/BioinfinvRepro.git`
+Puede ser de nuestro interes sincronizar el repo de nuestro ordenador con un fork de Ozono (que vive en GitHub y que contiene nuestros cambios) y no directamente con la versión original. En este caso, es necesario cambiar el origin de Ozono a un fork del mismo que vive en mi GitHub. Ésto lo vamos a lograr con:  
+
+`git remote add upstream https://github.com/TavoIbrahim/Ozono.git`
 
 para actualizar la copia que tenemos en el ordenador con el repositorio que vive en línea (en GitHub). 
 
