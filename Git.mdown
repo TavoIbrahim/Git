@@ -1,5 +1,4 @@
 # GITHUB DESDE LA TERMINAL
-=========================
 
 Lo primero que debemos hacer es "vincular" nuestra cuenta de GitHub con nuestro ordenador. Para ello:
 
@@ -9,9 +8,9 @@ y luego:
 
 `git config user.name "TavoIbrahim"`
 
-##Clonar un repositorio
+## Clonar un repositorio
 
-En este caso, voy a crear un clon del repositorio BioinfinvRepro que vive en mi GitHub (Es un fork, el original vive en la cuenta de [AliciaMsst](https://github.com/AliciaMstt) ). Para ello, escribiré:
+En este caso, voy a crear un clon del repositorio BioinfinvRepro que vive en mi GitHub (Es un fork, el original vive en la cuenta de [AliciaMsst](https://github.com/AliciaMstt)). Para ello, escribiré:
 
 `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
@@ -23,24 +22,21 @@ A partir de este momento,
 
 `git status`
 
-Nos permitirá comprobar nuestra situación (si hay archivos o cambios que han quedado pendientes subir/commit)
+nos permitirá comprobar nuestra situación (si hay archivos o cambios que han quedado pendientes subir/commit), mientras que
 
 `git add`
 
-Nos permitirá agregar los cambios (archivos, directorios, etc.) a nuestro git. Por ejemplo:
+agregará los cambios (archivos, directorios, etc.) a nuestro git. Por ejemplo:
 
 `git add ejemplo.txt`
 
-Al realizar algún cambio, es conveniente que éstos, vayan comentados, por lo que podemos utilizar: 
+Al realizar algún cambio, es conveniente que éstos vayan comentados, por lo que podemos utilizar: 
 
 `git commit -m`
 
-Finalmente, `git push`
+Finalmente, `git push` "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un pull request.
 
-que "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un pull request.
-
-# HACER FORK
-===========
+# FORK
 
 Hacer un fork implica copiar un repositorio. La idea en este caso es proponer cambios o utilizar un punto de partida para desarrollar una idea propia, SIN realizar cambios al repo original.
 
@@ -48,16 +44,16 @@ Es muy útil para tratar bugs, de tal suerte que:
 
 1) Haces el fork del repo
 2) Realizas los cambios necesarios
-3) Realizas un Pull request
+3) Realizas un pull request
 
-PASOS PARA HACER UN FORK Y PULL request
+## Pasos para hacer fork y pull request
 
-1)Desde el navegador, realizar el fork del repositorio que nos interesa modificar.
+1) Desde el navegador, realizar el fork del repositorio que nos interesa modificar.
 2) Desde la terminal, bajamos los directorios y archivos de repositorio a nuestro ordenador con:
 
 git clone [URL AL FORK en nuestra cuenta]
 
-3) Configurar GIT para sincronizar tu fork (EL CLON QUE VIVE EN NUESTRO ORDENADOR) con el repositorio original (EL QUE VIVE EN INTERNET), hay que escribir:
+3) Configurar git para sincronizar tu fork (EL CLON QUE VIVE EN NUESTRO ORDENADOR) con el repositorio original (EL QUE VIVE EN INTERNET), hay que escribir:
 
 git remote -v 
 
