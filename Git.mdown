@@ -10,7 +10,7 @@ y luego:
 
 ## Hacer cambios Ordenador --> Nuestro GitHub
 
-En este caso, voy a clonar el repositorio BioinfinvRepro que vive en mi GitHub (En realidad es un fork, el original vive en la cuenta de [Alicia Mastretta](https://github.com/AliciaMstt)). Para ello, hay que escribir:
+En este caso, vamos a copiar (descargar) el repositorio BioinfinvRepro que vive en mi [GitHub](https://github.com/TavoIbrahim) a algún lugar del ordenador (En realidad, este repo es un **fork**, el original vive en la cuenta de [Alicia Mastretta](https://github.com/AliciaMstt)). Para ello, hay que escribir:
 
 `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
@@ -26,21 +26,21 @@ que nos permitirá comprobar nuestra situación (si hay archivos o cambios que h
 
 `git add`
 
-que agregará los cambios (archivos, directorios, etc.) a git. Por ejemplo:
+que agregará los cambios (archivos, directorios, etc.) a git (e.g., `git add ejemplo.txt`) 
 
-`git add ejemplo.txt`
+`git commit -m`
 
-Al realizar algún cambio, es conveniente que éstos vayan comentados, por lo que podemos utilizar: 
+que permite realizar comentarios a los cambios hechos (e.g., `git commit -m "agregar archivo ejemplo"`) 
 
-`git commit -m`. Por ejemplo, 
+`git push` 
 
-`git commit -m ejemplo.txt`
+que "empuja" los cambios a nuestro GitHub. 
 
-Finalmente, `git push` "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un `pull request`.
+`git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un `pull request`.
 
 ## Hacer cambios GitHub ---> Ordenador (Sincronizar)
 
-Para actualizar (sincronizar) la copia del repositorio que vive en nuestro ordenador con el repositorio en GitHub (El original, el que vive en Internet), hay que escribir:
+Para actualizar (sincronizar) la copia del repositorio que vive en nuestro ordenador con el repositorio en nuestro GitHub, hay que escribir:
 
 `git remote -v` 
 
@@ -48,4 +48,4 @@ para verificar la configuración remota de nuestra copia. Y:
 
 `git remote add upstream https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
-para actualizar nuestra copia en el ordenador con el repo original que vive en línea. Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, con el repo de Alicia).
+para actualizar nuestra copia del ordenador con el repo original que vive en línea (GitHub). Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, con el repo de Alicia).
