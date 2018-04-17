@@ -1,4 +1,4 @@
-# GITHUB DESDE LA TERMINAL
+# GitHub y Git desde la terminal
 
 Lo primero que debemos hacer es "vincular" nuestra cuenta de GitHub con nuestro ordenador. Para ello:
 
