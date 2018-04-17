@@ -1,4 +1,4 @@
-#GITHUB DESDE LA TERMINAL
+# GITHUB DESDE LA TERMINAL
 =========================
 
 Lo primero que debemos hacer es "vincular" nuestra cuenta de GitHub con nuestro ordenador. Para ello:
@@ -11,7 +11,7 @@ y luego:
 
 ##Clonar un repositorio
 
-En este caso, voy a crear un clon del repositorio BioinfinvRepro que vive en mi GitHub (Es un fork, el original vive en la cuenta de [AliciaMsst] (https://github.com/AliciaMstt) ). Para ello, escribiré:
+En este caso, voy a crear un clon del repositorio BioinfinvRepro que vive en mi GitHub (Es un fork, el original vive en la cuenta de [AliciaMsst](https://github.com/AliciaMstt) ). Para ello, escribiré:
 
 `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
@@ -39,7 +39,7 @@ Finalmente, `git push`
 
 que "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un pull request.
 
-#HACER FORK
+# HACER FORK
 ===========
 
 Hacer un fork implica copiar un repositorio. La idea en este caso es proponer cambios o utilizar un punto de partida para desarrollar una idea propia, SIN realizar cambios al repo original.
