@@ -8,9 +8,9 @@ y luego:
 
 `git config user.name "TavoIbrahim"`
 
-## Hacer cambios, ordenador --> Nuestro GitHub
+## Hacer cambios Ordenador --> Nuestro GitHub
 
-En este caso, voy a clonar el repositorio BioinfinvRepro que vive en mi GitHub (En realidad es un fork, el original vive en la cuenta de [AliciaMsst](https://github.com/AliciaMstt)). Para ello, escribiré:
+En este caso, voy a clonar el repositorio BioinfinvRepro que vive en mi GitHub (En realidad es un fork, el original vive en la cuenta de [Alicia Mastretta](https://github.com/AliciaMstt)). Para ello, hay que escribir:
 
 `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
@@ -38,7 +38,7 @@ Al realizar algún cambio, es conveniente que éstos vayan comentados, por lo qu
 
 Finalmente, `git push` "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un `pull request`.
 
-# Hacer cambios GitHub ---> Ordenador (Sincronizar)
+## Hacer cambios GitHub ---> Ordenador (Sincronizar)
 
 Para actualizar (sincronizar) la copia del repositorio que vive en nuestro ordenador con el repositorio en GitHub (El original, el que vive en Internet), hay que escribir:
 
