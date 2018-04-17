@@ -46,6 +46,8 @@ Para actualizar (sincronizar) la copia del repositorio que vive en nuestro orden
 
 para verificar la configuración remota de nuestra copia. Y:
 
-`git remote add upstream https://github.com/TavoIbrahim/BioinfinvRepro.git`
+`git remote add upstream https://github.com/TavoIbrahim/c.git`
 
-para actualizar nuestra copia del ordenador con el repo original que vive en línea (GitHub). Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, con el repo de Alicia).
+para actualizar la copia que tenemos en el ordenador con el repositorio que vive en línea (en GitHub). 
+
+Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, si queremos actualizar nuestra copia de BioinfinvRepro con el repo original, que vive en el GitHub de Alicia).
