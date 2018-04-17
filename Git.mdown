@@ -51,3 +51,13 @@ para verificar la configuración remota de nuestra copia. Y:
 para actualizar la copia que tenemos en el ordenador con el repositorio que vive en línea (en GitHub). 
 
 Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, si queremos actualizar nuestra copia de BioinfinvRepro con el repo original, que vive en el GitHub de Alicia. Para actualizar la copia de BioinfinvRepro que vive en tu ordenador, utiliza `git pull`).
+
+# FORK Y PULL REQUEST
+
+Hacer un fork implica copiar un repositorio. La idea en este caso es proponer cambios o utilizar un punto de partida para desarrollar una idea propia, SIN realizar cambios al repo original.
+
+Es muy útil para tratar bugs, de tal suerte que:
+
+1) Haces el fork del repo
+2) Realizas los cambios necesarios
+3) Pull request
