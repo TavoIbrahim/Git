@@ -8,19 +8,22 @@ y luego:
 
 `git config user.name "TavoIbrahim"`
 
-## Fork y Pull request
+## Fork
 
 Hacer un fork implica copiar un repositorio. La idea de un fork es tener un punto de partida para proponer cambios y/o desarrollar nuevas ideas, SIN realizar cambios al repositorio original.
 
 Los pasos son relativamente sencillos:
 
-1) Hacer el fork del repositorio en GitHub con un simple click
+**1)** Hacer el fork del repositorio en GitHub con un simple click
 
 ![alt text](https://github.com/TavoIbrahim/Git/blob/master/Captura%20de%20pantalla%20de%202018-04-17%2009-01-42.png)
 
+Aparecerá algo así:
 
-2) Realizas los cambios necesarios
-3) Pull request
+![alt text](https://github.com/TavoIbrahim/Git/blob/master/Captura%20de%20pantalla%20de%202018-04-17%2009-01-31.png)
+
+**2)** Realizas los cambios necesarios
+**3)** Pull request, es decir, propones tus cambios
 
 ## Hacer cambios Ordenador --> Nuestro GitHub
 
