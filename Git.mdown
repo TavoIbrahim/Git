@@ -16,7 +16,7 @@ Los pasos son relativamente sencillos:
 
 **1)** Hacer el fork del repositorio en GitHub con un simple click
 
-![alt text](https://github.com/TavoIbrahim/Git/blob/master/Captura%20de%20pantalla%20de%202018-04-17%2009-01-42.png)
+![alt text](https://github.com/TavoIbrahim/Git/blob/master/Captura%20de%20pantalla%20de%202018-04-17%2013-53-45.png)
 
 Aparecerá algo así:
 
