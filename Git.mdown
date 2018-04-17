@@ -40,21 +40,19 @@ A partir de este momento, los comandos que nos será útiles son:
 
 `git status`
 
-que nos permitirá comprobar nuestra situación (si hay archivos o cambios que han quedado pendientes subir/commit);
+que nos permitirá comprobar nuestra situación (si hay archivos o cambios que han quedado pendientes subir/commit). Por ejemplo, si nosotros creamos un archivo (e.g., Physalia_physalis.txt) y después escribimos `git status`, veremos que nuestra situación cambió. Para darle seguimiento a este cambio, es necesario utilizar: 
 
 `git add`
 
-que agregará los cambios (archivos, directorios, etc.) a git (e.g., `git add ejemplo.txt`) 
+que agregará los cambios (archivos, directorios, etc.) a git (e.g., `Physalia_physalis.txt`); y  
 
 `git commit -m`
 
-que permite realizar comentarios a los cambios hechos (e.g., `git commit -m "agregar archivo ejemplo"`) 
+que permitirá realizar comentarios de los cambios (e.g., `git commit -m "agregar archivo Physalia"`). Finalmente,  
 
 `git push origin master` 
 
-que "empuja" los cambios a nuestro GitHub. 
-
-`git push origin master` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un **pull request**.
+"empuja" los cambios a nuestro GitHub. En este paso, es necesario que cuentes con tu usuario y contraseña, por lo que `git push origin master` sólo es útil para subir cambios a NUESTRO GitHub. Para empujar cambios a otros usuarios, se requerirá realizar un **pull request**.
 
 ## Sincronizar un repositorio con una cuenta GitHub (o crear un remote)
 
