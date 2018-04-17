@@ -38,9 +38,9 @@ que "empuja" los cambios a nuestro GitHub.
 
 `git push origin master` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un **pull request**.
 
-## Hacer cambios Nuestro GitHub ---> Ordenador (Sincronizar)
+## Sincronizar un repositorio con nuestra cuenta GitHub (o crear un remote)
 
-Para actualizar (sincronizar) la copia del repositorio que vive en nuestro ordenador con el repositorio en nuestro GitHub, hay que escribir:
+Para sincronizar la copia del repositorio que vive en nuestro ordenador con el repositorio en GitHub, hay que crear un escribir:
 
 `git remote -v` 
 
@@ -52,7 +52,7 @@ para actualizar la copia que tenemos en el ordenador con el repositorio que vive
 
 Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, si queremos actualizar nuestra copia de BioinfinvRepro con el repo original, que vive en el GitHub de Alicia. Para actualizar la copia de BioinfinvRepro que vive en tu ordenador, utiliza `git pull`).
 
-# FORK Y PULL REQUEST
+# Fork y Pull request
 
 Hacer un fork implica copiar un repositorio. La idea en este caso es proponer cambios o utilizar un punto de partida para desarrollar una idea propia, SIN realizar cambios al repo original.
 
