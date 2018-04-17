@@ -10,7 +10,7 @@ y luego:
 
 ## Fork
 
-Hacer un fork implica copiar un repositorio. La idea de un fork es tener un punto de partida para proponer cambios y/o desarrollar nuevas ideas, SIN realizar cambios al repositorio original.
+Hacer un fork implica copiar un repositorio. La idea de un fork es tener un punto de partida para proponer cambios y/o desarrollar nuevas ideas, SIN realizar modificaciones al repositorio original.
 
 Los pasos son relativamente sencillos:
 
