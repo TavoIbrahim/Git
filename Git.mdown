@@ -50,4 +50,4 @@ para verificar la configuración remota de nuestra copia. Y:
 
 para actualizar la copia que tenemos en el ordenador con el repositorio que vive en línea (en GitHub). 
 
-Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, si queremos actualizar nuestra copia de BioinfinvRepro con el repo original, que vive en el GitHub de Alicia).
+Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, si queremos actualizar nuestra copia de BioinfinvRepro con el repo original, que vive en el GitHub de Alicia. Para actualizar la copia de BioinfRepro que vive en tu ordenador, utiliza `git pull`).
