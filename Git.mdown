@@ -32,11 +32,11 @@ que agregará los cambios (archivos, directorios, etc.) a git (e.g., `git add ej
 
 que permite realizar comentarios a los cambios hechos (e.g., `git commit -m "agregar archivo ejemplo"`) 
 
-`git push` 
+`git push origin master` 
 
 que "empuja" los cambios a nuestro GitHub. 
 
-`git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un **pull request**.
+`git push origin master` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para empujar cambios a otras cuentas, se requerirá realizar un **pull request**.
 
 ## Hacer cambios Nuestro GitHub ---> Ordenador (Sincronizar)
 
