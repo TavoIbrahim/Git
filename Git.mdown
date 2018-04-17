@@ -8,9 +8,9 @@ y luego:
 
 `git config user.name "TavoIbrahim"`
 
-## Clonar un repositorio
+## Hacer cambios, ordenador --> Nuestro GitHub
 
-En este caso, voy a crear un clon del repositorio BioinfinvRepro que vive en mi GitHub (Es un fork, el original vive en la cuenta de [AliciaMsst](https://github.com/AliciaMstt)). Para ello, escribiré:
+En este caso, voy a clonar el repositorio BioinfinvRepro que vive en mi GitHub (En realidad es un fork, el original vive en la cuenta de [AliciaMsst](https://github.com/AliciaMstt)). Para ello, escribiré:
 
 `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
@@ -18,47 +18,34 @@ Es necesario que nuestro WD corresponda a BioinfinvRepro, así que:
 
 `cd BioinfinvRepro`
 
-A partir de este momento, 
+A partir de este momento, los comandos que nos será útiles son: 
 
 `git status`
 
-nos permitirá comprobar nuestra situación (si hay archivos o cambios que han quedado pendientes subir/commit), mientras que
+que nos permitirá comprobar nuestra situación (si hay archivos o cambios que han quedado pendientes subir/commit);
 
 `git add`
 
-agregará los cambios (archivos, directorios, etc.) a nuestro git. Por ejemplo:
+que agregará los cambios (archivos, directorios, etc.) a git. Por ejemplo:
 
 `git add ejemplo.txt`
 
 Al realizar algún cambio, es conveniente que éstos vayan comentados, por lo que podemos utilizar: 
 
-`git commit -m`
+`git commit -m`. Por ejemplo, 
 
-Finalmente, `git push` "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un pull request.
+`git commit -m ejemplo.txt`
 
-# FORK
+Finalmente, `git push` "empuja" los cambios a nuestro GitHub. `git push` sólo es útil para subir cambios a NUESTRA CUENTA GitHub. Para "empujar cambios" a otras cuentas, se requerirá realizar un `pull request`.
 
-Hacer un fork implica copiar un repositorio. La idea en este caso es proponer cambios o utilizar un punto de partida para desarrollar una idea propia, SIN realizar cambios al repo original.
+# Hacer cambios GitHub ---> Ordenador (Sincronizar)
 
-Es muy útil para tratar bugs, de tal suerte que:
+Para actualizar (sincronizar) la copia del repositorio que vive en nuestro ordenador con el repositorio en GitHub (El original, el que vive en Internet), hay que escribir:
 
-1) Haces el fork del repo
-2) Realizas los cambios necesarios
-3) Realizas un pull request
+`git remote -v` 
 
-## Pasos para hacer fork y pull request
+para verificar la configuración remota de nuestra copia. Y:
 
-1) Desde el navegador, realizar el fork del repositorio que nos interesa modificar.
-2) Desde la terminal, bajamos los directorios y archivos de repositorio a nuestro ordenador con:
+`git remote add upstream https://github.com/TavoIbrahim/BioinfinvRepro.git`
 
-git clone [URL AL FORK en nuestra cuenta]
-
-3) Configurar git para sincronizar tu fork (EL CLON QUE VIVE EN NUESTRO ORDENADOR) con el repositorio original (EL QUE VIVE EN INTERNET), hay que escribir:
-
-git remote -v 
-
-para verificar la configuración remota de nuestro fork. Y:
-
-git remote add upstream [URL al repositorio con el que queremos actualizar]
-
-Esta última línea sólo nos va a servir para actualizar repos (o FORKS) que vivan en nuestra cuenta de github (osea que no podremos actualizar el repo de Alicia :( )
+para actualizar nuestra copia en el ordenador con el repo original que vive en línea. Ojo, ésto sólo servirá si el repo original esta en nuestro GitHub (osea que no funcionará, por ejemplo, con el repo de Alicia).
