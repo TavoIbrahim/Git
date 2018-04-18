@@ -23,8 +23,8 @@ Imagen de [Roger Dudler](https://twitter.com/rogerdudler)
 
 En nuestro repositorio local viven dos directorio: ABC_reftables y ABC_scripts; así como un README.txt. Para llevar estor archivos, del WD a Index, en la terminal escribiremos:
 
-`git add ABC_reftables`
-`git add ABC_scripts`
+`git add ABC_reftables`,
+`git add ABC_scripts`,
 `git add README`
 
 Para verificar que nuestros archivos se encuentren en Index, podemos escribir `git status` y nos aparecerá una lista de los archivos que se encuentran en index y que necesitan ser commiteados para llegar a Head.
