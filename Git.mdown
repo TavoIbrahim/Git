@@ -14,11 +14,34 @@ Para crear un nuevo repositorio de git, nos movemos al directorio de nuestro int
 
 `git init`
 
-En pantalla veremos algo así como `Initialized empty Git repository in /home/PATH_to_directory`. Nota que el repositorio hasta ahora, se encuentra vacio.
+En pantalla veremos algo así como `Initialized empty Git repository in /home/PATH_to_directory`. Nota que el repositorio hasta ahora, se encuentra vacio. 
 
-`git clone /home/PATH_to_directory` ó `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git` crea copias de los repositorios que existen en el escritorio o en el servidor (GitHub) respectivamente. 
+Git está organizado en tres partes: el Working directory, el Index y Head. El hecho de que Git diga creamos un repositorio vacio (aunque en realidad tengamos datos dentro del directorio) significa que tenemos que "empujar" nuestros archivos, desde Working directory hasta Head. Para lograrlo,  
 
-![alt text](http://rogerdudler.github.io/git-guide/img/trees.png)
+![alt text](https://github.com/TavoIbrahim/Git/blob/master/trees.png)
+Imagen de [Roger Dudler](https://twitter.com/rogerdudler) 
+
+`git add` registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head
+
+
+
+
+
+
+
+`git push origin master` 
+
+"empuja" los cambios a nuestro GitHub. En este paso, es necesario que cuentes con tu usuario y contraseña, por lo que `git push origin master` sólo es útil para subir cambios a NUESTRO GitHub. Para empujar cambios a otros usuarios, se requerirá realizar un **pull request**.
+
+
+
+
+
+
+
+`git clone /home/PATH_to_working_directory` y `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git` crea copias de los repositorios que existen en el escritorio y en el servidor (GitHub) respectivamente. 
+
+
 
 
 
