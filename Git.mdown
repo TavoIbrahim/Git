@@ -10,28 +10,54 @@ y luego:
 
 ## Comándos básicos de Git
 
-Para crear un nuevo repositorio de git, nos movemos al directorio de nuestro interés (e.g., ABC_example) y dentro de ese directorio, utilizamos:
+Para crear un nuevo repositorio de git, nos movemos al directorio de nuestro interés (e.g., *ABC_example*) y dentro de ese directorio, utilizamos:
 
 `git init`
 
 En pantalla veremos algo así como `Initialized empty Git repository in /home/YOUR_USERNAME/ABC_example/.git/`. Nota que el repositorio hasta ahora, se encuentra vacio. 
 
-Git está organizado en tres partes: el Working directory, el Index y Head. El hecho de que Git diga creamos un repositorio vacio (aunque en realidad tengamos datos dentro del directorio) significa que tenemos que "empujar" nuestros archivos, desde Working directory hasta Head. Para ello, utilizaremos `git add`, que registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head.  
+Git está organizado en tres partes: el Working directory (WD), el Index y Head.
 
 ![alt text](https://github.com/TavoIbrahim/Git/blob/master/trees.png)
 Imagen de [Roger Dudler](https://twitter.com/rogerdudler) 
 
-En nuestro repositorio local viven dos directorio: ABC_reftables y ABC_scripts; así como un README.txt. Para llevar estor archivos, del WD a Index, en la terminal escribiremos:
+Git dice que nuestro repositorio esta vacio (aunque en realidad tenemos datos dentro del WD) porque tenemos que "empujar" nuestros archivos, desde Working directory hasta Head. Para ello, utilizaremos `git add`, que registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head.  
 
-`git add ABC_reftables`,
-`git add ABC_scripts`,
-`git add README`
+En nuestro repositorio local viven ABC_scripts y un README.txt. Para llevar estos archivos, del WD a Index, en la terminal escribiremos:
 
-Para verificar que nuestros archivos se encuentren en Index, podemos escribir `git status` y nos aparecerá una lista de los archivos que se encuentran en index y que necesitan ser commiteados para llegar a Head.
+`git add ABC_scripts`
 
-`git commit -m "add files for an ABC analysis"`
+`git add README.txt`
 
-En la terminal nos aparecerá nuevamente la lista de los archivos que llegaros a Head. Ahora ya podemos subir nuestro repositorio local, a GitHub (Repositorio remoto). Para hacerlo, en la terminal escribe:
+Para verificar que nuestros archivos se encuentren en Index, podemos escribir `git status` y nos aparecerá una lista de los archivos que se encuentran en index y que necesitan ser commiteados para llegar a Head. Ahora, para migrar los archivos de Index a Head, escribiremos:
+
+`git commit -m "add files for an ABC analysis"`, entre comillas va un comentario. Te darás cuenta que el commit fue un éxito cuando te aparezca una lista de los archivos en pantalla.
+
+Ahora ya podemos subir nuestro repositorio local (*ABC_example*), a GitHub. Para hacerlo, en GitHub.com tenemos que crear un repositorio remoto con "point and click". En este caso, mi repositorio en GitHub se llama *ABC_example*.
+
+Finalmente, desde la terminal escribimos:
+
+`git remote add origin https://github.com/TavoIbrahim/ABC_example.git` que crea un vínculo (remote) llamado *origin*, entre tu repositorio local y el repositorio que creamos en GitHub; y 
+
+`git push -u origin master`, que "empuja" los archivos que están en Head a GitHub. 
+
+Es probable que te arrepientas de llevar algo a Head (XD), así que existen algunos comandos para solucionarlo:
+
+`git log` nos permitirá observar el historial de nuestro repositorio local (es decir, los commits). Nos aparecerá un texto similar a éste:
+
+`commit a39041d1fc86cf34b01697ac3b5fa187509dcf6b
+Author: Tavo Ibrahim <tavoibrahim@gmail.com>
+Date:   Wed Apr 18 14:16:00 2018 -0500
+
+    add files for an ABC analysis
+chalis@chalis-SVE14118FXW[ABC_example]`
+
+Si queremos eliminar un commit de manera definitiva, entonces escribimos: `git reset --hard a39041d1fc86cf34b01697ac3b5fa187509dcf6b`,
+por lo que tendrás que empezar a "empujar" tus archivos y directorios desde el WD hasta Head.
+
+
+
+
 
 
 
