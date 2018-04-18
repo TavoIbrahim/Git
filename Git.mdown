@@ -21,7 +21,7 @@ Git está organizado en tres partes: el Working directory (WD), el Index y Head.
 ![alt text](https://github.com/TavoIbrahim/Git/blob/master/trees.png)
 Imagen de [Roger Dudler](https://twitter.com/rogerdudler) 
 
-Git dice que nuestro repositorio esta vacio (aunque en realidad tenemos datos dentro del WD) porque tenemos que "empujar" nuestros archivos, desde Working directory hasta Head. Para ello, utilizaremos `git add`, que registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head.  
+Git dice que nuestro repositorio esta vacio (aunque en realidad tenemos datos dentro del WD) porque tenemos que "empujar" nuestros archivos, desde WD hasta Head. Para ello, utilizaremos `git add`, que registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head.  
 
 En nuestro repositorio local viven ABC_scripts y un README.txt. Para llevar estos archivos, del WD a Index, en la terminal escribiremos:
 
@@ -48,7 +48,7 @@ Es probable que te arrepientas de llevar algo a Head (XD), así que existen algu
 `commit a39041d1fc86cf34b01697ac3b5fa187509dcf6b`
 
 Si queremos eliminar un commit de manera definitiva, entonces escribimos: `git reset --hard a39041d1fc86cf34b01697ac3b5fa187509dcf6b`,
-por lo que tendrás que empezar a "empujar" tus archivos y directorios desde el WD hasta Head.
+por lo que tendrás que empezar desde cero a "empujar" tus archivos y directorios desde el WD hasta Head.
 
 
 
