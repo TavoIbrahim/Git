@@ -27,7 +27,7 @@ En nuestro repositorio local viven ABC_scripts y un README.txt. Para llevar esto
 
 `git add ABC_scripts`
 
-`git add README.txt`
+`git add README_ABC.txt`
 
 Para verificar que nuestros archivos se encuentren en Index, podemos escribir `git status` y nos aparecerá una lista de los archivos que se encuentran en index y que necesitan ser commiteados para llegar a Head. Ahora, para migrar los archivos de Index a Head, escribiremos:
 
@@ -45,12 +45,7 @@ Es probable que te arrepientas de llevar algo a Head (XD), así que existen algu
 
 `git log` nos permitirá observar el historial de nuestro repositorio local (es decir, los commits). Nos aparecerá un texto similar a éste:
 
-`commit a39041d1fc86cf34b01697ac3b5fa187509dcf6b
-Author: Tavo Ibrahim <tavoibrahim@gmail.com>
-Date:   Wed Apr 18 14:16:00 2018 -0500
-
-    add files for an ABC analysis
-chalis@chalis-SVE14118FXW[ABC_example]`
+`commit a39041d1fc86cf34b01697ac3b5fa187509dcf6b`
 
 Si queremos eliminar un commit de manera definitiva, entonces escribimos: `git reset --hard a39041d1fc86cf34b01697ac3b5fa187509dcf6b`,
 por lo que tendrás que empezar a "empujar" tus archivos y directorios desde el WD hasta Head.
