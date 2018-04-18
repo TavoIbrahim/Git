@@ -14,14 +14,31 @@ Para crear un nuevo repositorio de git, nos movemos al directorio de nuestro int
 
 `git init`
 
-En pantalla veremos algo así como `Initialized empty Git repository in /home/PATH_to_directory`. Nota que el repositorio hasta ahora, se encuentra vacio. 
+En pantalla veremos algo así como `Initialized empty Git repository in /home/YOUR_USERNAME/ABC_example/.git/`. Nota que el repositorio hasta ahora, se encuentra vacio. 
 
-Git está organizado en tres partes: el Working directory, el Index y Head. El hecho de que Git diga creamos un repositorio vacio (aunque en realidad tengamos datos dentro del directorio) significa que tenemos que "empujar" nuestros archivos, desde Working directory hasta Head. Para lograrlo,  
+Git está organizado en tres partes: el Working directory, el Index y Head. El hecho de que Git diga creamos un repositorio vacio (aunque en realidad tengamos datos dentro del directorio) significa que tenemos que "empujar" nuestros archivos, desde Working directory hasta Head. Para ello, utilizaremos `git add`, que registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head.  
 
 ![alt text](https://github.com/TavoIbrahim/Git/blob/master/trees.png)
 Imagen de [Roger Dudler](https://twitter.com/rogerdudler) 
 
-`git add` registra los cambios (archivos, directorios, etc.) a Index y `git commit -m` nos permite realizar comentarios de dichos cambios y llevarlos a Head
+En nuestro repositorio local viven dos directorio: ABC_reftables y ABC_scripts; así como un README.txt. Para llevar estor archivos, del WD a Index, en la terminal escribiremos:
+
+`git add ABC_reftables`
+`git add ABC_scripts`
+`git add README`
+
+Para verificar que nuestros archivos se encuentren en Index, podemos escribir `git status` y nos aparecerá una lista de los archivos que se encuentran en index y que necesitan ser commiteados para llegar a Head.
+
+`git commit -m "add files for an ABC analysis"`
+
+En la terminal nos aparecerá nuevamente la lista de los archivos que llegaros a Head. Ahora ya podemos subir nuestro repositorio local, a GitHub (Repositorio remoto). Para hacerlo, en la terminal escribe:
+
+
+
+
+
+
+
 
 
 
