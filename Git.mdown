@@ -8,6 +8,20 @@ y luego:
 
 `git config user.name "TavoIbrahim"`
 
+## Comándos básicos de Git
+
+Para crear un nuevo repositorio de git, nos movemos al directorio de nuestro interés (e.g., ABC_example) y dentro de ese directorio, utilizamos:
+
+`git init`
+
+En pantalla veremos algo así como `Initialized empty Git repository in /home/PATH_to_directory`. Nota que el repositorio hasta ahora, se encuentra vacio.
+
+`git clone /home/PATH_to_directory` ó `git clone https://github.com/TavoIbrahim/BioinfinvRepro.git` crea copias de los repositorios que existen en el escritorio o en el servidor (GitHub) respectivamente. 
+
+![alt text](http://rogerdudler.github.io/git-guide/img/trees.png)
+
+
+
 ## Fork
 
 Hacer un fork implica copiar un repositorio. La idea de un fork es tener un punto de partida para proponer cambios y/o desarrollar nuevas ideas, SIN realizar modificaciones al repositorio original.
