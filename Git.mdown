@@ -2,11 +2,11 @@
 
 Lo primero que debemos hacer es "vincular" nuestra cuenta de GitHub con nuestro ordenador. Para ello:
 
-`git config --global user.email "tavoibrahim@gmail.com"`
+`git config --global user.email "USERNAME@gmail.com"`
 
 y luego:
 
-`git config user.name "TavoIbrahim"`
+`git config user.name "USERNAME_GITHUB"`
 
 ## Comándos básicos de Git
 
