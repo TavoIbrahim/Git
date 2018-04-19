@@ -43,7 +43,37 @@ Regresamos a la terminal y escribimos:
 
 ## Ramas (branch)
 
-Cuando creamos un repositorio en nuestro ordenador, por defecto, estaremos trabajando en una rama 
+Cuando creamos un repositorio en nuestro ordenador, por defecto, estamos trabajando en la rama *master*. Si queremos realizar cambios o pruebas, SIN MODIFICAR lo que vive en master, es muy útil crear ramas o *branch*. Por lo tanto, las ramas són básicamente copias de *master* en las que podemos hacer pruebas, cambios, etc. 
+
+Es una buena idea, antes de empezar a crear ramas, corroborar en dónde nos encontramos, para ello, en la terminal escribimos: 
+
+`git branch -a`
+
+este comando nos arrojará la lista de las ramas que existen en nuestro repo y con un asterisco, nos marcará la rama en la que nos encontramos.
+
+Vamos a hacer una rama de master que se llame Physalia, para ello, en la terminal escribimos:
+
+`git checkout -b Physalia`
+
+Al crear esta rama, en automático nos cambiamos de master a Physalia. Para regresar a master, sólo tenemos que escribir: `git checkout master` y para regresar a Physalia: `git checkout Physalia`.
+
+En la rama Physalia, creamos un directorio que se llama Sequences y dentro de éste, creamos un archivo README.txt. Estos serán nuestros cambios respecto a master. Una vez hechos, utilizamos `git add` y `git commit -m` para llevarlos a HEAD. 
+
+Para empujar nuestra rama (Physalia) a GitHub, utilizamos:
+
+`git push origin Physalia`
+
+Estos cambios no aparecen en master, sino hasta que realicemos un *merge*. En la terminal, escribimos (desde master):
+
+`git merge Physalia --no-commit` y `git push origin master` para subir los cambios a GitHub (El repositorio remoto). 
+
+
+
+
+
+
+
+
 
 Es probable que te arrepientas de llevar algo a Head (XD), así que existen algunos comandos para solucionarlo:
 
